@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Phantom Shield",
+  "description": "check URLs from Pipeline",
+  "version": "2.0.1",
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  },
+  "background": {
+    "service_worker": "src/service_worker.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": []
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["warning.html", "warning.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "unlimitedStorage",
+    "notifications",
+    "scripting",
+    "webNavigation",
+    "webRequest",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": ["*://*/*", "http://*/*", "https://*/*"],
+  "action": {
+    "default_popup": "index.html"
+  }
+}

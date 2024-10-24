@@ -1,0 +1,7 @@
+{
+  "type": "BloomFilter",
+  "_size": 20,
+  "_nbHashes": 7,
+  "_filter": { "size": 24, "content": "y6MD" },
+  "_seed": 78187493520
+}

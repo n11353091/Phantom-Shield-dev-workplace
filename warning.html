@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <title>Warning</title>
+    <style>
+      body {
+        font-family: "Nunito Sans", sans-serif;
+        text-align: center;
+        margin-top: 100px;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+      .list-group-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+      }
+      .list-group-item:last-child {
+        border-bottom: none;
+      }
+      .form-select {
+        margin: 20px auto;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./img/icon.png" class="img-thumbnail" alt="icon" />
+    <h1>This website is risky.</h1>
+
+    <div
+      class="accordion accordion-flush w-50 mx-auto"
+      id="accordionFlushExample"
+    >
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Description
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">Content related to the description.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <label for="actionSelect" class="form-label">Action</label>
+      <select class="form-select" id="actionSelect">
+        <option selected>Select</option>
+        <option value="1">Back to previous page</option>
+        <option value="2">Access to the site anyway</option>
+      </select>
+    </div>
+    <div
+      class="modal fade"
+      id="confirmModal"
+      tabindex="-1"
+      aria-labelledby="confirmModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="confirmModalLabel">Confirm Access</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to access the site anyway?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="confirmNoButton"
+            >
+              No
+            </button>
+            <button type="button" class="btn btn-primary" id="confirmYesButton">
+              Yes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: none">
+      <button id="continueButton"></button>
+      <button id="backButton"></button>
+    </div>
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/jquery-3.6.0.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="warning.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,user-scalable = no, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="mystyle.css" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <title>Popup</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row-gap-8">
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexSwitchCheckChecked"
+            >Off/On</label
+          >
+        </div>
+      </div>
+      <br />
+      <div class="row-gap-8"></div>
+      <div id="app">
+        <div class="container">
+          <div class="row-gap-8">
+            <div class="col-md-3 col-sm-6">
+              <div class="counter">
+                <div class="counter-icon">
+                  <i class="fa fa-globe"></i>
+                </div>
+                <div class="counter-content">
+                  <h3>Web Protecting</h3>
+                  <span class="counter-value">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div style="height: 100px">
+        <form class="container-fluid justify-content-start d-flex">
+          <button
+            class="btn btn-outline-success me-2"
+            type="button"
+            style="font-size: 10px"
+            id="settingButton"
+          >
+            <img src="img/settings.png" alt="settings" width="20" height="20" />
+            Setting
+          </button>
+
+          <button
+            class="btn btn-outline-success me-2"
+            type="button"
+            style="font-size: 10px"
+            id="guidelineButton"
+          >
+            <img src="img/shield.png" alt="settings" width="20" height="20" />
+            Guideline
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/jquery-3.6.0.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="content.js"></script>
+  </body>
+</html>

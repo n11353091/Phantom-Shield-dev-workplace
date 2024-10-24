@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="mystyle.css" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <title>Settings</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row-gap-8">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a
+                class="page-link"
+                href="#"
+                aria-label="Previous"
+                id="backButton"
+              >
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card" style="width: 18rem">
+        <div class="card-header">Setting</div>
+        <ul class="list-group list-group-flush">
+          <button id="updateFilterCard">
+            <li class="list-group-item">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-4 d-flex align-items-start">
+                  <img
+                    src="img/update.png"
+                    alt="update"
+                    style="width: 20px; height: 20px; margin-right: 10px"
+                  />
+                </div>
+                <div class="col-md-4 d-flex align-items-center">
+                  <p class="card-text" style="font-size: 10px; margin: 0">
+                    Update Filter
+                  </p>
+                </div>
+              </div>
+            </li>
+          </button>
+          <li class="list-group-item">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4 d-flex align-items-start">
+                <img
+                  src="img/error.png"
+                  alt="error"
+                  style="width: 20px; height: 20px; margin-right: 10px"
+                />
+              </div>
+              <div class="col-md-4 d-flex align-items-center">
+                <p class="card-text" style="font-size: 10px; margin: 0">
+                  Error Report
+                </p>
+              </div>
+            </div>
+          </li>
+          <button id="PrivacyPolicy">
+            <li class="list-group-item">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-4 d-flex align-items-start">
+                  <img
+                    src="img/lock.png"
+                    alt="privacy"
+                    style="width: 20px; height: 20px; margin-right: 10px"
+                  />
+                </div>
+                <div class="col-md-4 d-flex align-items-center">
+                  <p class="card-text" style="font-size: 10px; margin: 0">
+                    Privacy Policy
+                  </p>
+                </div>
+              </div>
+            </li>
+          </button>
+          <button id="TermofUse">
+            <li class="list-group-item">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-4 d-flex align-items-start">
+                  <img
+                    src="img/pngwing.png"
+                    alt="ToF"
+                    style="width: 20px; height: 20px; margin-right: 10px"
+                  />
+                </div>
+                <div class="col-md-4 d-flex align-items-center">
+                  <p class="card-text" style="font-size: 10px; margin: 0">
+                    Term of Use
+                  </p>
+                </div>
+              </div>
+            </li>
+          </button>
+          <li class="list-group-item">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4 d-flex align-items-start">
+                <img
+                  src="img/aboutus.png"
+                  alt="aboutus"
+                  style="width: 20px; height: 20px; margin-right: 10px"
+                />
+              </div>
+              <div class="col-md-4 d-flex align-items-center">
+                <p class="card-text" style="font-size: 10px; margin: 0">
+                  About Us
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/jquery-3.6.0.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="content.js"></script>
+  </body>
+</html>
